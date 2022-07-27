@@ -19,7 +19,7 @@ const getDatabaseType = (envVar: string): DatabaseTypes => {
   imports: [
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
-      type: getDatabaseType(process.env['db_connectionString']),
+      type: getDatabaseType(process.env['DB_URL']),
       url: process.env.DB_URL,
       autoLoadEntities: true,
       synchronize: false,
