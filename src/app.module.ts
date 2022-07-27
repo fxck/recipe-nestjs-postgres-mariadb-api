@@ -7,7 +7,7 @@ import { TodosModule } from './todos/todos.module';
   imports: [
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
-      type: 'postgres',
+      type: 'mariadb',
       url: process.env.DB_URL,
       autoLoadEntities: true,
       synchronize: false,

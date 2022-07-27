@@ -21,7 +21,7 @@ export class TodosService {
   }
 
   async findOne(id: number): Promise<Todo> {
-    const data = await this.todosRepository.findOne(id);
+    const data = await this.todosRepository.findOneBy({ id });
     if (!data) {
       throw new NotFoundException('todo not found');
     }
