@@ -1,2 +1,3 @@
-# recipe-nestjs-mariadb-api
-Zerops Nest.js API with MariaDB recipe
+# Zerops NestJS API with MariaDB recipe
+
+Simple CRUD NestJS application utilizing TypeORM for MariaDB database connection.
